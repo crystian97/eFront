@@ -112,6 +112,15 @@ input{
     background-color: var(--dark);
     border: 1px solid var(--dark-200);
     margin-top: 8px;
+    padding: 10px;
+    color: var(--gray);
+
+}
+input:focus{
+    color: var(--green);
+
+
+    
 }
 .form-group{
     display: flex;
