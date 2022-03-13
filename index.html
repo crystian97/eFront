@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +10,14 @@
     <meta name="keywords" content="newsletter,ebook,front-end">
     <meta name="author" content="Crystian Araújo Veloso">
     <link rel="stylesheet" href="src/css/style.css">
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+
+
     <title>eFront</title>
 </head>
+
 <body>
     <header>
         <img src="/src/img/eFront.png" class="logo" alt="">
@@ -20,27 +27,27 @@
     <section class="presentation">
         <h1 class="title">Seja bem-vindo a <br>
             sua melhor newsletter</h1>
-            <p class="description">Fique por dentro de todas a novidades </p>
+        <p class="description">Fique por dentro de todas a novidades </p>
     </section>
     <main>
         <p class="label">Preencha os campos para receber as notícias <br> sobre programação</p>
         <form action="">
             <fieldset class="form-group">
                 <label for="">Nome</label>
-                <input type="text" >
+                <input type="text" name="nome" id="nome">
             </fieldset>
             <fieldset class="form-group">
                 <label for="">Email</label>
-                <input type="email">
+                <input type="email" id="email">
             </fieldset>
             <fieldset class="form-group">
-                <button class="btn-send">Enviar</button>
+                <button type="button" class="btn-send">Enviar</button>
             </fieldset>
         </form>
     </main>
     <script src="/src/js/main.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 </body>
+
 </html>

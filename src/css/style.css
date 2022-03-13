@@ -6,6 +6,7 @@
     --gray:#AEAEAE;
     --dark-200:#212529;
     --light:#F9f9f9;
+    --danger:#e21313;
 
 
 }
@@ -15,9 +16,10 @@
     padding:0;
     box-sizing:border-box;
 }
-html,body{
-    background: linear-gradient(252.44deg, #1A1A1A 0%, #0A0A0A 100%);
+body{
     height: 100vh;
+    background: linear-gradient(252.44deg, #1A1A1A 0%, #0A0A0A 100%);
+    position: relative;
 }
 
 
@@ -63,6 +65,60 @@ padding-top: 32px;
     font-weight: bold;
 
 }
+/* alert errror */
+.btn-close-error{
+    background-color: var(--danger);
+    color: var(--dark-200);
+    width: 600px;
+    height: 60px;
+    margin-top: 10px;
+    font-size: 30px;
+    border: 0;
+}
+.btn-close-success{
+    background-color: var(--green);
+    color: var(--dark-200);
+    width: 600px;
+    height: 60px;
+    margin-top: 10px;
+    font-size: 30px;
+    border: 0;
+}
+
+.text-error{
+    color: var(--danger);
+}
+.text-success{
+    color: var(--green);
+}
+
+
+div.swal2-popup ,.swal2-modal, .swal2-show{
+    width: 40vw;
+    height: 40vh;
+    font-family: 'inter' !important;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+
+   
+}
+/* alert success */
+.btn-close-succes{
+    background-color: var(--green);
+    color: var(--dark-200);
+    width: 600px;
+    height: 60px;
+}
+.alert-erro{
+    color: var(--light);
+}
+.alert-erro > span{
+    color: var(--green);
+}
 img.logo{
     width: max-content;
     height: max-content;
@@ -71,10 +127,18 @@ img.logo{
 section.presentation{
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 100px;
     align-items: center;
 }
 p.description{
+    color: var(--green);
+    font-family: 'Inter';
+    font-weight: 500;
+    line-height: 39px;
+    font-size: 32px;
+    margin-top: 32px;
+}
+.description{
     color: var(--green);
     font-family: 'Inter';
     font-weight: 500;
@@ -118,6 +182,7 @@ input{
 }
 input:focus{
     color: var(--green);
+    border: 1px solid var(--green);
 
 
     
